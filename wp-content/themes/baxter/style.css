@@ -1,0 +1,12 @@
+/*
+Theme Name: Baxter St
+Text Domain: baxter
+Version: 1.0
+Description: Custom responsive theme.
+Author: Six Overground
+*/
+
+/* @import "css/reset.css"; */
+@import "css/normalize.css";
+@import "css/main.css";
+@import "css/mobile.css";

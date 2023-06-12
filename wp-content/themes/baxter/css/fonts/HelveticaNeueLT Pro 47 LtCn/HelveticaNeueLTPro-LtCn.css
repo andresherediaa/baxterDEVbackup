@@ -1,0 +1,12 @@
+/* Webfont: HelveticaNeueLTPro-LtCn */@font-face {
+    font-family: 'HelveticaNeueLTPro47LtCn';
+    src: url('HelveticaNeueLTPro-LtCn.eot'); /* IE9 Compat Modes */
+    src: url('HelveticaNeueLTPro-LtCn.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('HelveticaNeueLTPro-LtCn.woff') format('woff'), /* Modern Browsers */
+         url('HelveticaNeueLTPro-LtCn.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('HelveticaNeueLTPro-LtCn.svg#HelveticaNeueLTPro-LtCn') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
