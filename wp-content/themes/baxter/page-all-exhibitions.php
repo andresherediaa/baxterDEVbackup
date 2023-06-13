@@ -8,9 +8,6 @@ if (isset($_GET['schedule'])) $schedule = $_GET['schedule'];
 if (isset($_GET['location'])) $location = $_GET['location']; 
 if (isset($_GET['exhibition_year'])) $exhibition_year = $_GET['exhibition_year']; 
 $filtered = ($schedule != '' || $location != '' || $exhibition_year != '');
-
-echo "Valor de \$schedule: ";
-print_r($schedule); // O var_dump($schedule);
 ?>
 
 <div class="gallery-form">
