@@ -14,8 +14,10 @@
     // const year = yearSelect.val()
   
     // const url = `/all-exhibitions?schedule=${schedule}&location=${location}&exhibition_year=${year}`
-    console.log("pafina de all exibithions", url)
-    const url = `/baxter/all-exhibitions?schedule=${schedule}`
+    var url = `/baxter/all-exhibitions?schedule=${schedule}`
+    if (schedule === 'project'){
+      url = `/baxter/all-exhibitions?location=project`
+    }
     document.location.href = url
   }
 

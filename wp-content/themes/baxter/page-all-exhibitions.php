@@ -17,6 +17,7 @@ $filtered = ($schedule != '' || $location != '' || $exhibition_year != '');
       <option value="past" <?php if ($schedule == 'past') echo 'selected'; ?>>Past</option>
       <option value="current" <?php if ($schedule == 'current') echo 'selected'; ?>>Current</option>
       <option value="upcoming" <?php if ($schedule == 'upcoming') echo 'selected'; ?>>Upcoming</option>
+      <option value="project" <?php if ($location == 'project') echo 'selected'; ?>>Project Space</option>
     </select>
 
     <!--
