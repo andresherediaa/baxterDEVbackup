@@ -2510,5 +2510,129 @@ container .slick-slide img {
 .vr-content .is-layout-flow.wp-block-column h1 {
   font-weight: normal;
 }
+/* wide-program */
+
+.main-programs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  max-width: 1024px; 
+  margin: 0 auto;  
+  gap: 40px;  
+}
+
+@media (max-width: 600px) {
+  .main-programs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    max-width: 1024px; 
+    margin: 0 auto;  
+    gap: 40px;  
+  }
+  .wide-program {
+    margin: 0 20px;
+  }
+}
+  
+
+.main-programs__container {
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.wide-program {
+  margin-bottom: 1em;
+  max-width: 100%;
+}
+
+.wide-program a {
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.wide-program__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wide-program:last-child .wide-program__container {
+  border-bottom: none;
+}
+
+.wide-program__details {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.wide-program__details div{
+  text-align: justify;
+}
+
+.wide-program__image {
+  width: 100%;
+}
+
+.wide-program__image img {
+  width: 100%;
+  height: auto;
+}
+
+.wide-program__eyebrow {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.wide-program__title {
+  margin: 0 0 15px 0;
+  line-height: 1.2;
+}
+
+.wide-program__title a {
+  text-decoration: none;
+}
+
+.wide-program__artist {
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.2;
+}
+
+.font-medium.archived-section__title {
+  margin-bottom: 28px;
+}
+
+.archived ul li a h5 {
+  text-align: justify;
+}
+
+.archived ul li a h3 {
+  display: none;
+}
+.archived ul li a h4 {
+  margin-bottom: 10px;
+}
+
+.archived ul li a .thumbs__thumbnail {
+  margin-bottom: 30px;
+}
+
+.main-programs__hero {
+  width: 100%;
+  height: 500px;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.main-programs__header .wide-program__image img{
+  height: 100%;
+}
+
+.main-programs__container-description {
+  text-align: justify;
+}
 /* End
 ----------------------------------------------------------------------------- */

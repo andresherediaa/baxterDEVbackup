@@ -289,6 +289,34 @@ function get_server_urls() {
 add_action('wp_enqueue_scripts', 'get_server_urls');
 
 
+//add new fiel to [post]
+function add_checkbox_metabox() {
+    add_meta_box(
+        'checkbox-main-program', 
+        'Only for All Programs Section',  
+        'show_checkbox_metabox', 
+        'post',  
+        'normal', 
+        'default' 
+    );
+}
+add_action('add_meta_boxes', 'add_checkbox_metabox');
+
+function show_checkbox_metabox($post) {
+    $valor_checkbox = get_post_meta($post->ID, 'program_checkbox', true);
+    $checked = ($valor_checkbox == 'yes') ? 'checked' : '';
+    echo '<input type="checkbox" name="program_checkbox" value="yes" ' . $checked . '> Header in all programs page?';
+}
+function save_checkbox_metabox($post_id) {
+    if (isset($_POST['program_checkbox'])) {
+        update_post_meta($post_id, 'program_checkbox', 'yes');
+    } else {
+        delete_post_meta($post_id, 'program_checkbox');
+    }
+}
+add_action('save_post', 'save_checkbox_metabox');
+
+
 // Load the custom post types.
 include ( TEMPLATEPATH . '/lib/event.php' );
 include ( TEMPLATEPATH . '/lib/residency.php' );
