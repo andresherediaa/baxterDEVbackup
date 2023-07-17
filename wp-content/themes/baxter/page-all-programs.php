@@ -18,6 +18,7 @@
       if (!$image) {
         $image = get_template_directory_uri() . '/images/blank.png';
       }
+      $postHeader = $post->ID;
       ?>
       <div class="hero hero-home main-programs__hero" style="background-image: url('<?php echo $image; ?>')">
       </div>
@@ -28,7 +29,7 @@
     </div>
     <section class="main-programs">
       <?php
-      $programs_filter = array("Aperture—Baxter St Next Step Award, Program Call for Curators, Program Coffee Talks");
+      $programs_filter = array("Program Aperture Baxter,Program conversations, Program Call for Curators, Program Coffee Talks, Program DEI Task Force, Program Call for Mid-Career, Program Photo Book Share");
       foreach ($programs_filter as &$value) {
         $args = array(
           'category_name' => $value,
@@ -42,7 +43,9 @@
 
         if ($query->have_posts()) :
           while ($query->have_posts()) : $query->the_post();
-            get_template_part('wide-all-programs', get_post_type());
+            if (get_the_ID() !== $postHeader) {  
+              get_template_part('wide-all-programs', get_post_type());
+            }
           endwhile;
         endif;
       }
@@ -56,7 +59,7 @@
           <h1 class="font-medium archived-section__title">Archived Programs</h1>
           <ul id="content-loop">
             <?php
-            $programs_filter = array("Program conversations, Program DEI Task Force, Program Call for Mid-Career, Zine and Photo Book Fair, Program Past Lectures,  Program Critique Groups");
+            $programs_filter = array("Program Zine and Photo Book Fair, Program Past Lectures,  Program Critique Groups");
             foreach ($programs_filter as &$value) {
               $args = array(
                 'category_name' => $value,
