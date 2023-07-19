@@ -23,7 +23,7 @@
       <div class="hero hero-home main-programs__hero" style="background-image: url('<?php echo $image; ?>')">
       </div>
       <div class="main-programs__container">
-        <h1 class="main-programs__container-title"><?php echo $post_title; ?></h1>
+        <h1 class="main-programs__container-title font-medium"><?php echo $post_title; ?></h1>
         <p class="main-programs__container-description"><?php echo $post_excerpt; ?></p>
       </div>
     </div>

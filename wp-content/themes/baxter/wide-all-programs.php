@@ -14,7 +14,7 @@ $eyebrow = baxter_eyebrow($post);
                 <div class='wide-program__image'><img src='<?php echo $image; ?>' alt='' /></div> 
                 <div class='wide-program__details'> 
                     <h6 class="wide-program__eyebrow font-eyebrow font-medium"><?php echo $eyebrow; ?></h6>
-                    <h2 class="wide-program__title"><?php echo get_the_title($post->ID); ?></h2>
+                    <h2 class="wide-program__title font-medium"><?php echo get_the_title($post->ID); ?></h2>
                     <div><?php echo $excerpt; ?></div>
                 </div> 
             </div>
