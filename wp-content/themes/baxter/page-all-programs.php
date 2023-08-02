@@ -2,7 +2,7 @@
 
 <div class="main-programs-page">
   <div class="main-programs-container">
-    <div class="main-programs__header">
+    <div class="main-programs__header thumbs-inner archived-section___inner">
       <?php
       $args = array(
         'post_type' => 'post',
@@ -27,7 +27,7 @@
         <p class="main-programs__container-description"><?php echo $post_excerpt; ?></p>
       </div>
     </div>
-    <section class="main-programs">
+    <section class="main-programs thumbs-inner archived-section___inner">
       <?php
       $programs_filter = array("Program Aperture Baxter,Program conversations, Program Call for Curators, Program Coffee Talks, Program DEI Task Force, Program Call for Mid-Career, Program Photo Book Share");
       foreach ($programs_filter as &$value) {

@@ -2516,31 +2516,20 @@ container .slick-slide img {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   max-width: 1024px; 
-  margin: 0 279px;
-  grid-column-gap: 85px !important;
+  grid-column-gap: 47px !important;
   grid-column-gap: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .main-programs {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     max-width: 1024px; 
-    margin: 0 auto;  
     grid-column-gap: 40px;
   }
   .wide-program {
     margin: 0 20px;
-  }
-}
-
-@media (min-width: 900px) and (max-width: 1380px) {
-  .main-programs {
-    max-width: 1024px; 
-    margin: 0 279px;
-    grid-column-gap: 70px !important;
-    grid-column-gap: 0;
   }
 }
   
@@ -2570,7 +2559,7 @@ container .slick-slide img {
 }
 
 .wide-program__details {
-  margin: 13px 0;
+  margin: 0;
   width: 100%;
 }
 
@@ -2580,24 +2569,24 @@ container .slick-slide img {
 
 .wide-program__image {
   width: 100%;
-  border: solid red;
+  display: flex;
 }
 
 .wide-program__image img {
   width: 100%;
-  height: auto;
-  max-height: 311px;
+  height: max-content;
+  max-height: 295px;
   object-fit: cover;
 }
 
 .wide-program__eyebrow {
-  margin-top: 0;
-  margin-bottom: 4px;
+  margin: 0;
 }
 
 .wide-program__title {
-  margin: 0 0 5px 0;
-  line-height: 1.2;
+  font-size: 21px;
+  line-height: unset;
+  margin-top: 20px;
 }
 
 .wide-program__title a {
@@ -2614,6 +2603,10 @@ container .slick-slide img {
   margin-bottom: 28px;
 }
 
+.archived {
+  margin-top: 15px;
+}
+
 .archived ul li a h5 {
   text-align: justify;
 }
@@ -2623,10 +2616,11 @@ container .slick-slide img {
 }
 .archived ul li a h4 {
   margin-bottom: 10px;
+  font-size: 21px;
 }
 
 .archived ul li a .thumbs__thumbnail {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .main-programs__hero {
@@ -2643,7 +2637,7 @@ container .slick-slide img {
 }
 
 .main-programs__header {
-  margin: 0 279px;
+  padding-top: 40px;
 }
 
 
@@ -2665,7 +2659,8 @@ container .slick-slide img {
 }
 
 .main-programs__container-title {
-  margin-top: 50px ;
+  margin-top: 25px;
+  font-size: 25px;
 }
 /* End
 ----------------------------------------------------------------------------- */
