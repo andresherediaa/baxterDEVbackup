@@ -2036,6 +2036,7 @@ h3.alumni-thumb__title {
   left: 0;
   width: 100%;
   height: 100%;
+  background-image:linear-gradient(87deg, rgba(218, 224, 228, 0.1) 64%, rgba(235, 231, 229, 0.1) 100%);
 }
 
 .bottom-bar-right .menu .menu-item.menu-item-20687.removeHighlight a {

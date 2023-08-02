@@ -20,7 +20,7 @@
       }
       $postHeader = $post->ID;
       ?>
-      <div class="hero hero-home main-programs__hero" style="background-image: url('<?php echo $image; ?>')">
+      <div class="hero hero-home main-programs__hero" style="background-image:linear-gradient(87deg, rgba(218, 224, 228, 0.1) 64%, rgba(235, 231, 229, 0.1) 100%), url('<?php echo $image; ?>')">
       </div>
       <div class="main-programs__container">
         <h1 class="main-programs__container-title font-medium"><?php echo $post_title; ?></h1>
