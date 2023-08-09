@@ -1242,8 +1242,7 @@ a.wp-block-button__link {
 }
 
 .thumbs-inner h4 {
-  margin: 0 0 0.25em 0;
-  /* font-size: 15px; */
+  margin: 0;
 }
 
 .thumbs-inner .font-eyebrow {
@@ -2616,12 +2615,11 @@ container .slick-slide img {
   display: none;
 }
 .archived ul li a h4 {
-  margin-bottom: 10px;
   font-size: 21px;
 }
 
 .archived ul li a .thumbs__thumbnail {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .main-programs__hero {
