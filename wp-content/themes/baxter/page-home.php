@@ -12,16 +12,18 @@
 	<div class="thumbs-inner">
 		<ul>
 		<?php
+			include_once 'programs-filter.php';
 			// $press_category = get_term_by('name', 'Press', 'category');
 			$latest_posts_args = array(
 				'post_type' => 'post',
 				// 'category' => $press_category->term_id,
 				'orderby' => 'date',
 				'order' => 'DESC',
-				'numberposts' => 3
+				'numberposts' => 6,
+				'category__not_in' => $excluded_category_ids,
 			);
 			$latest_posts = get_posts($latest_posts_args);
-
+			
 			foreach ($latest_posts as $post) {
 				$image = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) );
 				if ( ! $image) {

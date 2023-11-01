@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <?php
+include_once 'programs-filter.php';
 $current_article_args = array(
     'post_type' => 'post',
     'tax_query' => array(
@@ -8,6 +9,12 @@ $current_article_args = array(
             'taxonomy' => 'post_format',
             'field' => 'slug',
             'terms' => array('post-format-video'),
+            'operator' => 'NOT IN'
+        ),
+        array(
+            'taxonomy' => 'category',
+            'field' => 'slug',
+            'terms' => $programs_filter,
             'operator' => 'NOT IN'
         )
     ),
@@ -57,6 +64,12 @@ if (!empty($current_articles)) {
                         'taxonomy' => 'post_format',
                         'field' => 'slug',
                         'terms' => array('post-format-video'),
+                        'operator' => 'NOT IN'
+                    ),
+                    array(
+                        'taxonomy' => 'category',
+                        'field' => 'slug',
+                        'terms' => $programs_filter,
                         'operator' => 'NOT IN'
                     )
                 ),
