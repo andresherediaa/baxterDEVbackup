@@ -253,8 +253,9 @@ figure {
   left: 0;
   top: 0;
   right: 0;
-  height: 35px;
+  height: 45px;
   z-index: 1;
+  display: flex;
 }
 
 .admin-bar .top-bar-outer {
@@ -269,19 +270,21 @@ figure {
   height: 36px;
   margin: auto;
   z-index: 9999;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 .top-bar-left {
-  flex-grow: 1;
+  flex-grow: unset;
 }
 .top-bar-left ul {
-  margin: 0 0 0 32px;
+  margin: 0 64px 0 0;
   padding: 0;
   display: flex;
   height: 100%;
   list-style: none;
 }
 .top-bar-left ul li {
-  padding: 0;
+  padding: 6px;
   font-size: 12px;
 }
 .top-bar-left ul li a {
@@ -336,7 +339,7 @@ figure {
   position: fixed;
   left: 0;
   right: 0;
-  top: 35px;
+  top: 45px;
   height: 70px;
   z-index: 1;
 	 box-shadow: 0px 3px 17px 4px #8585851a;
@@ -394,7 +397,7 @@ figure {
   padding-top: 3px;
 }
 .bottom-bar-right .menu .menu-item a:hover {
-  color: #f8cb47;
+  color: #f8cb47; /* #b2b2b2 */
 }
 .current-menu-item a {
   color: #f8cb47;
@@ -654,6 +657,7 @@ ul.menu li.menu-item ul.sub-menu {
 }
   ul.menu li.menu-item:hover ul.sub-menu {
     display: block;
+    border-radius: 0;
   }
 
   ul.menu li.menu-item ul.sub-menu::before {
@@ -709,23 +713,31 @@ ul.menu li.menu-item ul.sub-menu {
   position: relative;
   height: 100%;
   width: 100%;
+  background-color: white;
 }
 
-.top-bar-search label {
+.top-bar-search label,
+.top-bar-search .go-button {
   position: absolute;
-  left: 0;
+  left: 103%;
   top: 0;
   height: 100%;
   display: flex;
   align-items: center;
-  padding-bottom: 5px;
+  justify-content: center ;
+  background-color: #0099ff;
+  width: 34px;
+  font-size: 16px;
+  padding-top: 6px;
+  color: white;
+  cursor: pointer;
 }
 
 .top-bar-search input {
   background-color: transparent;
-  color: #fff;
+  color: #222222;
   border: none;
-  padding: 5px 5px 3px 20px;
+  padding: 5px 5px 0 7px;
   height: 100%;
   width: 100%;
   border-radius: 0;
@@ -2661,5 +2673,34 @@ container .slick-slide img {
   margin-top: 25px;
   font-size: 25px;
 }
+
+.top-bar-left.font-medium.desktop {
+  width: 25%;
+}
+
+.is-layout-flex.wp-container-3.wp-block-columns {
+  flex-direction: column;
+}
+.is-layout-flex.wp-container-3.wp-block-columns .paypal-button {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 10px 5px;
+  text-shadow: none;
+  background: #000;
+  display: inline-block;
+  border-radius: 0;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+.is-layout-flex.wp-container-3.wp-block-columns .wp-block-column {
+  margin-left: 0;
+}
+
+
+ ;
+
 /* End
 ----------------------------------------------------------------------------- */

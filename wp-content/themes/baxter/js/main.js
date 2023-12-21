@@ -20,6 +20,18 @@
     }
     document.location.href = url
   }
+  function updateArticles() {
+    const scheduleSelect = $('#articles-form #schedule')
+    const schedule = scheduleSelect.val()
+    var url = `/baxter/articles`
+    if (schedule.length > 0) {
+      url = `/baxter/articles?schedule=${schedule}`
+    } else {
+      url = `/baxter/articles`
+    } 
+    
+    document.location.href = url
+  }
 
   function updateVideo() {
     const categorySelect = $('.video-form #category');
@@ -50,6 +62,8 @@
   const galleryScheduleSelect = $('.gallery-form #schedule')
   const galleryLocationSelect = $('.gallery-form #location')
   const galleryYearSelect = $('.gallery-form #exhibition_year')
+  const articlesScheduleSelect = $('#articles-form #schedule')
+
 
   galleryScheduleSelect.change(function() {
     updateExhibition()
@@ -61,6 +75,10 @@
 
   galleryYearSelect.change(function() {
     updateExhibition()
+  })
+
+  articlesScheduleSelect.change(function() {
+    updateArticles()
   })
 	
   //Videos

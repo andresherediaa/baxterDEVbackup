@@ -324,7 +324,9 @@ include ( TEMPLATEPATH . '/lib/alumni.php' );
 // Load widgets.
 include ( TEMPLATEPATH . '/lib/primary_events_slider.php' );
 include ( TEMPLATEPATH . '/lib/secondary_events_slider.php' );
+include ( TEMPLATEPATH . '/lib/articles_slider.php' );
 include ( TEMPLATEPATH . '/lib/exhibitions_slider.php' );
 include ( TEMPLATEPATH . '/lib/alumni_header.php' );
+
 // Load meta boxes.
 include ( TEMPLATEPATH . '/lib/featured_image_2.php' );
