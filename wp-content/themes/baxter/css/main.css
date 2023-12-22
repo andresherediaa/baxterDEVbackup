@@ -318,10 +318,11 @@ figure {
   justify-content: center;
   text-decoration: none;
   color: #fff;
-  font-size: 12px;
+  font-size: 13px;
   height: 100%;
   text-transform: uppercase;
 	margin-top: 1px;
+  font-weight: 200;
 }
 .top-bar-right ul li.top-bar-search a {
   color: #fff;
@@ -725,10 +726,9 @@ ul.menu li.menu-item ul.sub-menu {
   display: flex;
   align-items: center;
   justify-content: center ;
-  background-color: #0099ff;
-  width: 34px;
-  font-size: 16px;
-  padding-top: 6px;
+  background-color: #666666;
+  width: 25px;
+  font-size: 14px;
   color: white;
   cursor: pointer;
 }
@@ -737,12 +737,13 @@ ul.menu li.menu-item ul.sub-menu {
   background-color: transparent;
   color: #222222;
   border: none;
-  padding: 5px 5px 0 7px;
+  padding: 5px 6px 0 5px;
   height: 100%;
   width: 100%;
   border-radius: 0;
   outline: none;
   font-size: 14px;
+  font-weight: 200;
 }
 
 .top-bar-search .fa-search {
@@ -2675,7 +2676,8 @@ container .slick-slide img {
 }
 
 .top-bar-left.font-medium.desktop {
-  width: 25%;
+  width: 23%;
+  height: 93%;
 }
 
 .is-layout-flex.wp-container-3.wp-block-columns {
@@ -2699,8 +2701,6 @@ container .slick-slide img {
   margin-left: 0;
 }
 
-
- ;
 
 /* End
 ----------------------------------------------------------------------------- */
