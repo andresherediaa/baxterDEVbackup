@@ -277,7 +277,7 @@ figure {
   flex-grow: unset;
 }
 .top-bar-left ul {
-  margin: 0 64px 0 0;
+  margin: 0 57px 0 0;
   padding: 0;
   display: flex;
   height: 100%;
@@ -2678,6 +2678,7 @@ container .slick-slide img {
 .top-bar-left.font-medium.desktop {
   width: 23%;
   height: 93%;
+  margin-top: 2px;
 }
 
 .is-layout-flex.wp-container-3.wp-block-columns {
